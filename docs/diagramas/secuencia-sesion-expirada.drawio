@@ -1,0 +1,267 @@
+<mxfile host="app.diagrams.net" type="device" version="28.0.6">
+  <diagram id="secuencia-sesion-expirada" name="Sesión expirada: el temporizador y el rechazo del puente">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tit" value="Sesión expirada: el temporizador y el rechazo del puente" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="14" width="1000" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Los dos caminos por los que se cae la sesión y la vuelta a Login." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="1000" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_usr" value="Usuario" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;verticalAlign=top;spacingTop=48;labelBorderColor=none;size=50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="70" width="20" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hbu" value="HomeBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hac" value="HomeActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ses" value="SesionManager&lt;br&gt;(SecureStore)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_br" value="BilleteraBridgeModule" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_tbu" value="TransferenciaBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_tac" value="TransferenciaActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_lac" value="LoginActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_lbu" value="LoginBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="70" width="150" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="fr0" value="caso 1: vence el temporizador con Home en pantalla" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;width=330;height=26;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="150" width="1630" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="fr1" value="caso 2: el puente atiende con la sesión ya vencida" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;width=330;height=26;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="570" width="1630" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="ac0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="175" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="215" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="245" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="530" y="245" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="345" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="385" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="455" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="595" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac8" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="625" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ac9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="655" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="755" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="785" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="815" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="875" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ms1" value="1. alExpirar: sesionExpiro()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="180" as="sourcePoint" />
+            <mxPoint x="720" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="180" />
+              <mxPoint x="760" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms2" value="2. cerrar(): borra la sesión del store" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="220" as="sourcePoint" />
+            <mxPoint x="890" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms3" value="3. emitir(&quot;SESSION_EXPIRED&quot;) cifrado" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="250" as="sourcePoint" />
+            <mxPoint x="540" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms4" value="4. setExpirada(true)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="280" as="sourcePoint" />
+            <mxPoint x="540" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="280" />
+              <mxPoint x="580" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms5" value="5. aviso: en un momento te llevamos al ingreso" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="320" as="sourcePoint" />
+            <mxPoint x="355" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms6" value="6. espera 2 s antes de salir" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="350" as="sourcePoint" />
+            <mxPoint x="720" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="350" />
+              <mxPoint x="760" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms7" value="7. Navegacion.aLogin(this, &quot;expirada&quot;) y finish()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="390" as="sourcePoint" />
+            <mxPoint x="1610" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms8" value="8. BridgeCrypto.rotar()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="420" as="sourcePoint" />
+            <mxPoint x="1620" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1660" y="420" />
+              <mxPoint x="1660" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms9" value="9. carga login.android.bundle con motivo=expirada" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="460" as="sourcePoint" />
+            <mxPoint x="1790" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms10" value="10. Tu sesión expiró, ingresa de nuevo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1790" y="490" as="sourcePoint" />
+            <mxPoint x="355" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms11" value="11. confirma la transferencia" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="600" as="sourcePoint" />
+            <mxPoint x="1250" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms12" value="12. transferir(envelope)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="630" as="sourcePoint" />
+            <mxPoint x="1080" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms13" value="13. exigirSesion(): actual()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="660" as="sourcePoint" />
+            <mxPoint x="900" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms14" value="14. borra la sesión vencida" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="690" as="sourcePoint" />
+            <mxPoint x="900" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="690" />
+              <mxPoint x="940" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms15" value="15. null" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="730" as="sourcePoint" />
+            <mxPoint x="1070" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms16" value="16. reject SESION_INVALIDA" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="760" as="sourcePoint" />
+            <mxPoint x="1250" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms17" value="17. sesionExpiro() en el hilo principal" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="790" as="sourcePoint" />
+            <mxPoint x="1430" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms18" value="18. emitir(&quot;SESSION_EXPIRED&quot;) cifrado" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1435" y="820" as="sourcePoint" />
+            <mxPoint x="1260" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms19" value="19. aviso sobre el formulario" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="850" as="sourcePoint" />
+            <mxPoint x="355" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms20" value="20. a los 2 s, Navegacion.aLogin(&quot;expirada&quot;)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="880" as="sourcePoint" />
+            <mxPoint x="1615" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt0" value="onResume programó alExpirar para expiraEnMs y onPause lo cancela; el TTL sale de BuildConfig.SESION_MINUTOS." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="195" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl0" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="235" as="sourcePoint" />
+            <mxPoint x="715" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt1" value="Los dos segundos le dan al bundle tiempo de pintar el aviso antes de que la pantalla desaparezca." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="300" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl1" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="335" as="sourcePoint" />
+            <mxPoint x="715" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt2" value="El puente no navega: avisa a la Activity, que es la única que sabe si ya programó la vuelta. expirando evita crear Login dos veces." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="700" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl2" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="745" as="sourcePoint" />
+            <mxPoint x="1075" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt3" value="Si se abre una pantalla privada sin sesión, sesionCaida deja al delegate sin componente y BundleActivity va directo a Login." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="820" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl3" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="865" as="sourcePoint" />
+            <mxPoint x="1615" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

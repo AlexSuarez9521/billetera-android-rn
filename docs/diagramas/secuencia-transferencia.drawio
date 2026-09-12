@@ -1,0 +1,373 @@
+<mxfile host="app.diagrams.net" type="device" version="28.0.6">
+  <diagram id="secuencia-transferencia" name="Transferencia: de OPEN_TRANSFER al saldo nuevo en Home">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tit" value="Transferencia: de OPEN_TRANSFER al saldo nuevo en Home" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="14" width="1000" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Desde el toque en Home hasta el saldo actualizado al volver." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="1000" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_usr" value="Usuario" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;verticalAlign=top;spacingTop=48;labelBorderColor=none;size=50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="70" width="20" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hbu" value="HomeBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hac" value="HomeActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_tac" value="TransferenciaActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_tbu" value="TransferenciaBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_br" value="BilleteraBridgeModule" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ses" value="SesionManager&lt;br&gt;(SecureStore)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ban" value="BancoMockApi" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_db" value="MockDb" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="70" width="150" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ac0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="530" y="135" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="165" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="195" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ac3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="225" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="890" y="255" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="315" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="345" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ac7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="375" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac8" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="435" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="495" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ac10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="585" width="10" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ac11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="615" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="645" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ac13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="715" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac14" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="845" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac15" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="875" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac16" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="890" y="905" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ac17" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="935" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ac18" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="890" y="995" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac19" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1025" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ac20" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="1095" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ms1" value="1. toca Transferir" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="140" as="sourcePoint" />
+            <mxPoint x="530" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms2" value="2. send(&quot;OPEN_TRANSFER&quot;)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="170" as="sourcePoint" />
+            <mxPoint x="1250" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms3" value="3. onBundleEvent(OPEN_TRANSFER)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="200" as="sourcePoint" />
+            <mxPoint x="720" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms4" value="4. esValida()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="230" as="sourcePoint" />
+            <mxPoint x="1430" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms5" value="5. Navegacion.aTransferencia(this)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="260" as="sourcePoint" />
+            <mxPoint x="890" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms6" value="6. carga transferencia.android.bundle con las props" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="290" as="sourcePoint" />
+            <mxPoint x="1075" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms7" value="7. celular del destino y Continuar" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms8" value="8. buscarDestino(envelope)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="350" as="sourcePoint" />
+            <mxPoint x="1250" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms9" value="9. actual()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="380" as="sourcePoint" />
+            <mxPoint x="1430" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms10" value="10. Sesion vigente" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="410" as="sourcePoint" />
+            <mxPoint x="1260" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms11" value="11. buscarPorCelular(celular)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="440" as="sourcePoint" />
+            <mxPoint x="1610" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms12" value="12. Usuario destino" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="470" as="sourcePoint" />
+            <mxPoint x="1260" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms13" value="13. sobre con el nombre del destino" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="500" as="sourcePoint" />
+            <mxPoint x="1080" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms14" value="14. monto, descripción y Continuar" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="530" as="sourcePoint" />
+            <mxPoint x="1070" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms15" value="15. confirma en la hoja" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="560" as="sourcePoint" />
+            <mxPoint x="1070" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms16" value="16. transferir(envelope)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="590" as="sourcePoint" />
+            <mxPoint x="1250" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms17" value="17. actual()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="620" as="sourcePoint" />
+            <mxPoint x="1430" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms18" value="18. transferir(userId, celular, monto, descripción)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="650" as="sourcePoint" />
+            <mxPoint x="1610" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms19" value="19. valida monto y destino" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="680" as="sourcePoint" />
+            <mxPoint x="1620" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1660" y="680" />
+              <mxPoint x="1660" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms20" value="20. aplicarTransferencia(...)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="720" as="sourcePoint" />
+            <mxPoint x="1790" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms21" value="21. anota DEBITO y CREDITO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1800" y="750" as="sourcePoint" />
+            <mxPoint x="1800" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1840" y="750" />
+              <mxPoint x="1840" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms22" value="22. Apunte(debito, saldoOrigen)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1790" y="790" as="sourcePoint" />
+            <mxPoint x="1620" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms23" value="23. Resultado.Ok(Transferencia)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="820" as="sourcePoint" />
+            <mxPoint x="1260" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms24" value="24. movimientoId, nuevoSaldo, fecha" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="850" as="sourcePoint" />
+            <mxPoint x="1080" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms25" value="25. send(&quot;TRANSFER_SUCCESS&quot;, {movimientoId})" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="880" as="sourcePoint" />
+            <mxPoint x="1250" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms26" value="26. onBundleEvent(TRANSFER_SUCCESS)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="910" as="sourcePoint" />
+            <mxPoint x="900" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms27" value="27. Listo, con el nuevo saldo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="940" as="sourcePoint" />
+            <mxPoint x="355" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms28" value="28. toca Volver al inicio" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="970" as="sourcePoint" />
+            <mxPoint x="1070" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms29" value="29. BackHandler.exitApp()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="1000" as="sourcePoint" />
+            <mxPoint x="900" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms30" value="30. finish(): Home vuelve a primer plano" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="1030" as="sourcePoint" />
+            <mxPoint x="720" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms31" value="31. onResume(): enviarHome()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="1060" as="sourcePoint" />
+            <mxPoint x="720" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="1060" />
+              <mxPoint x="760" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms32" value="32. usuario(s.userId)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="1100" as="sourcePoint" />
+            <mxPoint x="1610" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms33" value="33. saldo nuevo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="1130" as="sourcePoint" />
+            <mxPoint x="720" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms34" value="34. LOAD_HOME con el saldo nuevo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1160" as="sourcePoint" />
+            <mxPoint x="535" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms35" value="35. muestra el saldo nuevo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="1190" as="sourcePoint" />
+            <mxPoint x="355" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt0" value="Home se bloquea mientras abre la otra pantalla: saliendo en el bundle y navegando en la Activity." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="180" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl0" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="215" as="sourcePoint" />
+            <mxPoint x="535" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt1" value="El puente rechaza con DESTINO_NO_EXISTE, MISMA_CUENTA o DESTINO_INACTIVO antes de pedir el monto." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="480" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl1" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="515" as="sourcePoint" />
+            <mxPoint x="1255" y="515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt2" value="Reglas de negocio: celular de 10 dígitos que empieza por 3, monto mayor a cero y destino distinto del origen." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="630" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl2" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="665" as="sourcePoint" />
+            <mxPoint x="1615" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt3" value="El saldo se compara y se descuenta bajo el mismo candado. Si no alcanza, queda un movimiento RECHAZADA y sale SALDO_INSUFICIENTE." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="790" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl3" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="835" as="sourcePoint" />
+            <mxPoint x="1795" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt4" value="Home no se recarga: el bundle sigue montado y solo recibe otra vez LOAD_HOME con el saldo nuevo." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1010" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl4" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="1045" as="sourcePoint" />
+            <mxPoint x="715" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

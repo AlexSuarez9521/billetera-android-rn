@@ -1,0 +1,230 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="Cifrado del canal" id="cifrado-canal">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="titulo" value="El sobre cifrado del canal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="28" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitulo" value="Cómo viaja un dato entre Kotlin y los cuatro bundles de React Native. Cada caja es una clase, un archivo o una llamada que existe en el código." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="40" y="56" width="1000" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leyKotlin" value="Kotlin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="34" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="leyJs" value="JavaScript" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="34" width="110" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="leyCripto" value="paso de cifrado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="34" width="130" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="leySobre" value="el sobre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="34" width="90" height="24" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cajaA" value="1. De dónde sale la llave del canal y cómo llega al bundle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="40" y="95" width="1540" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="cajaB" value="2. El camino de un mensaje: del objeto de JavaScript a Kotlin, y la respuesta de vuelta" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="40" y="415" width="1540" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="cajaC1" value="3. Si alguien cambia un byte" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="40" y="815" width="500" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cajaC2" value="4. Qué va en claro y qué no" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="560" y="815" width="490" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cajaC3" value="5. El mismo sobre lo arman las dos partes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="815" width="510" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="divisor" value="" style="endArrow=none;html=1;rounded=0;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="445" as="sourcePoint" />
+            <mxPoint x="1070" y="775" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etiPuente" value="el puente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="1000" y="600" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="etiJs" value="JavaScript, dentro de Hermes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="70" y="450" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="etiKotlin" value="Kotlin, en el proceso de Android" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="1170" y="450" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a1" value="&lt;b&gt;BilleteraApp.onCreate&lt;/b&gt;&lt;br&gt;BridgeCrypto.inicializar()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="&lt;b&gt;32 bytes de SecureRandom&lt;/b&gt;&lt;br&gt;la llave del canal: vive solo en memoria, nunca se guarda" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="390" y="150" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="&lt;b&gt;BundleActivity.propsIniciales()&lt;/b&gt;&lt;br&gt;claveCanal = BridgeCrypto.claveBase64()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="150" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="&lt;b&gt;init(props) en bridge.ts&lt;/b&gt;&lt;br&gt;setClaveCanal(props.claveCanal)&lt;br&gt;la llave queda en crypto.ts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="150" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="notaA" value="Es el único dato que cruza en claro, y tiene que serlo: el bundle todavía no tiene con qué descifrar. Va una sola vez, en los launchOptions de la Activity, dentro del mismo proceso y sin pasar por red." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="150" width="230" height="92" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a5" value="&lt;b&gt;Logout o sesión expirada&lt;/b&gt;&lt;br&gt;Navegacion.aLogin(motivo)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" value="&lt;b&gt;LoginActivity.onCreate&lt;/b&gt;&lt;br&gt;el intent trae EXTRA_MOTIVO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" value="&lt;b&gt;BridgeCrypto.rotar()&lt;/b&gt;&lt;br&gt;otros 32 bytes, antes de armar las props" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="280" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" value="El bundle anterior queda con una llave que ya no descifra nada" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="280" width="240" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b1" value="&lt;b&gt;Objeto de JavaScript&lt;/b&gt;&lt;br&gt;{celular, monto, descripcion}&lt;br&gt;useTransferencia.ts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="&lt;b&gt;JSON.stringify&lt;/b&gt;&lt;br&gt;queda un texto plano en UTF-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="310" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="&lt;b&gt;randomBytes(12)&lt;/b&gt;&lt;br&gt;un IV nuevo por mensaje, del SecureRandom nativo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="&lt;b&gt;gcm(llave, iv).encrypt&lt;/b&gt;&lt;br&gt;AES-256-GCM, con el tag de 128 bits al final" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="790" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="sobre1" value="&lt;b&gt;el sobre&lt;/b&gt;&lt;br&gt;{&amp;quot;iv&amp;quot;: ...,&lt;br&gt;&amp;quot;data&amp;quot;: ...}&lt;br&gt;los dos en base64" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="474" width="120" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="&lt;b&gt;BilleteraBridgeModule&lt;/b&gt;&lt;br&gt;recibe el sobre como un String" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" value="&lt;b&gt;BridgeCrypto.descifrar&lt;/b&gt;&lt;br&gt;misma llave y ese IV&lt;br&gt;JSONObject &amp;#8594; BancoMockApi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="480" width="170" height="96" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r1" value="&lt;b&gt;BridgeCrypto.cifrar&lt;/b&gt;&lt;br&gt;AesGcm le pide al Cipher un IV nuevo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="660" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="&lt;b&gt;promise.resolve(sobre)&lt;/b&gt;&lt;br&gt;o ctx.emitDeviceEvent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="660" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="sobre2" value="&lt;b&gt;otro sobre&lt;/b&gt;&lt;br&gt;otro IV, siempre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="660" width="120" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="&lt;b&gt;descifrar(envelope)&lt;/b&gt;&lt;br&gt;misma llave, el IV que trae el sobre" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="790" y="660" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="&lt;b&gt;JSON.parse&lt;/b&gt;&lt;br&gt;objeto de JavaScript otra vez" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="660" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="notaB" value="Los eventos viajan igual. De Android a JavaScript (LOAD_HOME, SESSION_EXPIRED) los cifra JsEmitter.emitir y bridge.on los descifra, o los descarta si no cuadran. De JavaScript a Android (HOME_READY, LOGIN_SUCCESS, TRANSFER_SUCCESS) los cifra bridge.send." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="410" height="96" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c1a" value="Cambian un byte de data o del iv" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="870" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1b" value="El descifrado falla entero: no devuelve basura" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="960" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="notaC1" value="Kotlin lo convierte en PayloadInvalido y responde PAYLOAD_INVALIDO; JavaScript lanza &amp;quot;No se pudo descifrar el mensaje&amp;quot;. Nunca sale un texto a medias." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1022" width="440" height="46" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2a" value="&lt;b&gt;Va en claro&lt;/b&gt;&lt;br&gt;el nombre del método (login, transferir), el del evento (LOGIN_SUCCESS), el código de error (SALDO_INSUFICIENTE) y la claveCanal de las props iniciales" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="585" y="870" width="215" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2b" value="&lt;b&gt;Va dentro de data&lt;/b&gt;&lt;br&gt;celular, clave, monto, saldo, sessionId, nombres y la lista de movimientos: todo el contenido" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="815" y="870" width="215" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2c" value="El puente solo mueve Strings. En el log quedan el nombre de la operación y el código, nunca el payload." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="585" y="1015" width="445" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c3a" value="BridgeEnvelopeTest.kt&lt;br&gt;(Kotlin, JUnit)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="870" width="145" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c3v" value="test-vectors/&lt;br&gt;aes-gcm.json" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=middle;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="870" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c3b" value="crypto.test.ts&lt;br&gt;(Jest)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="870" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c3t" value="Con la misma llave y el mismo IV, las dos partes producen exactamente el mismo data. Kotlin descifra el sobre que armó JavaScript y JavaScript descifra el que armó Kotlin. El archivo se rehace con npm run vector." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="1095" y="960" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c3alg" value="AES-256-GCM, IV de 12 bytes, tag de 128 bits al final de data, sin AAD, texto plano en UTF-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="1025" width="470" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ea12" value="genera" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a1" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea23" value="en base64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a2" target="a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea34" value="props iniciales" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a3" target="a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea56" value="vuelve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a5" target="a6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea67" value="rota" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a6" target="a7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="a7" target="a8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eb12" value="serializa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="b1" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eb23" value="pide IV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="b2" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eb34" value="cifra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="b3" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eb4s" value="arma" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="b4" target="sobre1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ebs5" value="cruza" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="sobre1" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eb56" value="descifra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="b5" target="b6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="er12" value="cifra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="r1" target="r2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er2s" value="cruza" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="r2" target="sobre2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ers3" value="descifra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="sobre2" target="r3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er34" value="objeto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="r3" target="r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ec1" value="el tag de 128 bits no cuadra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="c1a" target="c1b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ec3a" value="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="c3a" target="c3v">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ec3b" value="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="c3b" target="c3v">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

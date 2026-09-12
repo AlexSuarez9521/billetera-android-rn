@@ -1,0 +1,8 @@
+{
+  "nota": "Vector solo para pruebas de interoperabilidad entre Kotlin (javax.crypto) y JS (@noble/ciphers). La app nunca usa esta llave; la de verdad se genera al azar en cada arranque. Se regenera con npm run vector.",
+  "algoritmo": "AES-256-GCM, IV de 12 bytes, tag de 128 bits al final de data, sin AAD, texto plano en UTF-8",
+  "clavePruebaB64": "Sx6aAtczWMFvpBHugCddnDq4ZA/JchXekQavSOMrfNA=",
+  "ivPruebaB64": "H6IMk153CLTGLeE5",
+  "textoPlano": "{\"sessionId\":\"8c2f7c1e-4d3a-4b6e-9d2f-0a1b2c3d4e5f\",\"userId\":\"u10001\",\"name\":\"Alex Suárez\",\"phone\":\"3001234567\",\"expiresAt\":\"2026-05-07T10:30:00\"}",
+  "envelope": "{\"iv\":\"H6IMk153CLTGLeE5\",\"data\":\"YZ4bACXnATalyw/sqZFTRfOovHVxcbQyRtQk6aJv279Y17b4rN8pxCXdzdcRXxnsTCg8EFPCsECNdD5Y/4qNzpwYm80SSjUs2N+JOpDwS3id5VJpMAaodDZTeuk+0tiD/KC9YFmfSKB0E2S/W0jrPNTFceqxypHVmbepWs7yvHNEgdqbFDivD6fcPo2ekStAj8ZrNU26c8DlSHpHjWEg66lHDA==\"}"
+}

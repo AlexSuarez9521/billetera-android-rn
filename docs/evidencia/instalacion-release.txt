@@ -1,0 +1,8 @@
+=== desinstalar version previa ===
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+=== instalar APK release ===
+Performing Streamed Install
+Success
+EXIT=0
+=== pm clear (datos en limpio) ===
+Success

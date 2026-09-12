@@ -1,0 +1,4 @@
+[ 23.8s] home.png bytes=70502 | Hola, Alex | 3001234567 | Disponible | $ 1.250.000 | Transferir, › | Transferir | › | Movimientos, › | Movimientos | Cerrar sesión
+[ 39.7s] transferencia-paso1.png bytes=55954 | Paso 1 de 2 | ¿A quién le envías? | Celular | 3109876543 | Continuar
+[ 66.4s] transferencia-confirmacion.png bytes=128585 | Revisa antes de enviar | Para | Laura P. | Celular | 3109876543 | Descripción | Almuerzo | Monto | $ 150.000 | Confirmar | Cancelar
+[ 76.9s] transferencia-listo.png bytes=65860 | ✓ | Listo | $ 150.000 | para Laura P. | 12 sep 2026, 01:40 | Nuevo saldo | $ 1.100.000 | Volver al inicio

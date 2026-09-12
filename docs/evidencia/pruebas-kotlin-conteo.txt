@@ -1,0 +1,7 @@
+=== JVM (pasada final) ===
+testsuite name="com.asuarez.billetera.data.BancoMockApiTest" tests="17" skipped="0" failures="0" errors="0"
+testsuite name="com.asuarez.billetera.security.AesGcmTest" tests="5" skipped="0" failures="0" errors="0"
+testsuite name="com.asuarez.billetera.security.BridgeEnvelopeTest" tests="6" skipped="0" failures="0" errors="0"
+testsuite name="com.asuarez.billetera.security.PasswordHasherTest" tests="6" skipped="1" failures="0" errors="0"
+testsuite name="com.asuarez.billetera.session.SesionManagerTest" tests="6" skipped="0" failures="0" errors="0"
+TOTAL tests=40 failures=0 errors=0 skipped=1

@@ -1,0 +1,18 @@
+=== SMOKE APK RELEASE — transferencia a 3109876543 ===
+
+--- 5. TRANSFERENCIA paso 1 de 2 ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+pantalla : Paso 1 de 2 | ¿A quién le envías? | Celular | 3001234567 | Continuar
+
+--- 6. TRANSFERENCIA paso 2 de 2 ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+pantalla : Paso 2 de 2 | ¿Cuánto le envías? | Laura P. | 3109876543 | Cambiar | Monto en pesos | 0 | Descripción (opcional) | Almuerzo | Continuar
+
+--- 7. HOJA DE CONFIRMACION ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+pantalla : Revisa antes de enviar | Para | Laura P. | Celular | 3109876543 | Monto | $ 150.000 | Confirmar | Cancelar
+
+--- 8. RESULTADO ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+(la consola de Windows murio aqui: cp1252 no imprime el caracter ✓ del titulo de la
+pantalla de resultado. El paso 8 se repitio aparte, en smoke-release-4-resultado.txt)

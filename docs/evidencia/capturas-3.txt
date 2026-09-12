@@ -1,0 +1,2 @@
+en home: Hola, Alex | 3001234567 | Disponible | $ 1.100.000 | Transferir, › | Transferir | › | Movimientos, › | Movimientos | Cerrar sesión
+saldo-insuficiente.png bytes=88649 | Paso 2 de 2 | ¿Cuánto le envías? | Laura P. | 3109876543 | Cambiar | Monto en pesos | 9.000.000 | Descripción (opcional) | Almuerzo | No tienes saldo suficiente | Continuar

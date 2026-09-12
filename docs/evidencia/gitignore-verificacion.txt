@@ -1,0 +1,14 @@
+=== verificacion .gitignore (git check-ignore) ===
+IGNORADO      android/keystore.properties
+IGNORADO      android/app/billetera.jks
+IGNORADO      android/local.properties
+NO IGNORADO   android/app/src/main/assets/bundles/login.android.bundle
+NO IGNORADO   android/app/debug.keystore
+NO IGNORADO   android/app/build
+
+=== carpetas build (existentes de verdad) ===
+IGNORADO      android/app/build/x.txt
+IGNORADO      android/build
+IGNORADO      build/bundles.txt
+
+=== nota: debug.keystore NO ignorado a proposito (negacion !debug.keystore); los bundles de assets SI se commitean ===

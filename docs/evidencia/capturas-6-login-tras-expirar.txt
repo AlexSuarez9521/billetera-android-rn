@@ -1,0 +1,2 @@
+actividad tras la expiracion: com.asuarez.billetera/.bundles.LoginActivity
+pantalla: Billetera | Tu sesión expiró, ingresa de nuevo | Ingresa tu celular y tu clave | Celular | Clave | Ingresar | Crear cuenta

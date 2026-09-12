@@ -1,0 +1,5 @@
+=== SMOKE APK RELEASE — saldo insuficiente ===
+
+--- 10. SALDO INSUFICIENTE ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+pantalla : Paso 2 de 2 | ¿Cuánto le envías? | Laura P. | 3109876543 | Cambiar | Monto en pesos | 9.000.000 | Descripción (opcional) | Almuerzo | No tienes saldo suficiente | Continuar

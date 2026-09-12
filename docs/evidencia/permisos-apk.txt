@@ -1,0 +1,13 @@
+=== permisos del APK release ===
+package: com.asuarez.billetera
+permission: com.asuarez.billetera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.asuarez.billetera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+
+=== permisos del APK debug ===
+09-11 20:32:36.079 30020 26824 W ziparchive: Unable to open 'app/build/outputs/apk/debug/app-debug.apk': No such file or directory
+app/build/outputs/apk/debug/app-debug.apk: error: failed opening zip: I/O error.
+package: com.asuarez.billetera
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+permission: com.asuarez.billetera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.asuarez.billetera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

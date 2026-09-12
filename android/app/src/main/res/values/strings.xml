@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Billetera</string>
+
+    <string name="error_titulo">Algo salió mal</string>
+    <string name="error_detalle">No pudimos abrir esta pantalla. Vuelve e intenta de nuevo.</string>
+    <string name="volver">Volver</string>
+
+    <string name="dispositivo_no_seguro">Dispositivo no seguro</string>
+    <string name="dispositivo_no_seguro_detalle">Este dispositivo tiene señales de estar modificado, así que no podemos abrir la app aquí.\n\n%1$s</string>
+    <string name="revisa_el_dispositivo">Revisa tu dispositivo</string>
+    <string name="senales_detectadas">Encontramos estas señales:\n\n%1$s</string>
+    <string name="continuar">Continuar</string>
+    <string name="salir">Salir</string>
+</resources>

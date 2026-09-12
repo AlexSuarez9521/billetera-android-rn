@@ -1,0 +1,13 @@
+<resources>
+    <color name="verde">#0B6E5F</color>
+    <color name="verde_oscuro">#074C41</color>
+    <color name="verde_suave">#DDEFE9</color>
+    <color name="crema">#F6F2EA</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="tinta">#1F1D1A</color>
+    <color name="gris">#6B6560</color>
+    <color name="linea">#E3DCD0</color>
+    <color name="ambar">#B8770A</color>
+    <color name="rojo">#B3261E</color>
+    <color name="rojo_suave">#F9E3E1</color>
+</resources>

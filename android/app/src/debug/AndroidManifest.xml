@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Los bundles salen de assets y el backend simulado corre en el proceso, así que la app
+         instalada no abre ningún socket. El permiso queda solo acá por si toca levantar Metro. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

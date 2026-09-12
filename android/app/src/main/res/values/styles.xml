@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- La paleta es clara a propósito: con DayNight los diálogos del sistema se volteaban
+         y quedaban fuera de la marca. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/crema</item>
+        <item name="android:statusBarColor">@color/crema</item>
+        <item name="android:navigationBarColor">@color/crema</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/tinta</item>
+        <item name="colorAccent">@color/verde</item>
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+    </style>
+
+</resources>

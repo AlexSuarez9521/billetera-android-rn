@@ -1,0 +1,211 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="Componentes" id="componentes">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1754" pageHeight="1241" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" value="&lt;b&gt;Billetera. Diagrama de componentes&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="620" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="App Android en Kotlin que hospeda cuatro pantallas hechas en React Native. Android manda en la navegacion, la sesion y las llaves." style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="48" width="760" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lg" value="Leyenda" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#b3b3b3;dashed=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=13;fontStyle=1;fontColor=#404040;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="16" width="390" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1" value="props iniciales (Android → JS, una vez al crear la pantalla)" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="36" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" value="llamada al modulo nativo (JS → Android, con promesa)" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="62" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" value="evento (los dos sentidos)" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="88" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zA" value="Contenedor Android · Kotlin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#b3b3b3;dashed=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=13;fontStyle=1;fontColor=#404040;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="560" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="&lt;b&gt;BilleteraApp&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Application. Arranca React Native, crea la llave del canal, el almacen cifrado, la sesion y el banco&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="185" width="520" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="splash" value="&lt;b&gt;SplashActivity&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;nativa. Diagnostica root y emulador, y decide: Login si no hay sesion valida, Home si la hay&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="262" width="520" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="bact" value="&lt;b&gt;BundleActivity&lt;/b&gt; (abstracta)&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Valida la sesion antes de cargar el bundle, aplica FLAG_SECURE en release, levanta su propio host y lo suelta en onDestroy&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="339" width="520" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bdel" value="&lt;b&gt;BundleDelegate&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;entrega las props iniciales&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="bhost" value="&lt;b&gt;BundleHost&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;un host por pantalla&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="420" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="aLogin" value="LoginActivity&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;publica&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="492" width="125" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="aHome" value="HomeActivity&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;privada&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="195" y="492" width="125" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="aTrans" value="TransferenciaActivity&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;privada&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="492" width="125" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="aMov" value="MovimientosActivity&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;privada&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="465" y="492" width="115" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="nav" value="&lt;b&gt;Navegacion&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;los intents entre pantallas&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="558" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="err" value="&lt;b&gt;ErrorActivity&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;si un bundle no carga&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="558" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nA" value="Cada pantalla privada revisa la sesion antes de que su bundle se cargue, y programa un temporizador para el instante en que la sesion vence." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="626" width="520" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rn" value="&lt;b&gt;RnBundle&lt;/b&gt; (enum)&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;login, home, transferencia, movimientos. Nombre del archivo en assets, componente registrado y si es privada&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="694" width="520" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="nA2" value="BilleteraApp arranca React Native con loadReactNative(). Desde 0.76 las librerias nativas van fusionadas y el SoLoader clasico ya no sirve." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="766" width="520" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zB" value="El puente" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#b3b3b3;dashed=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=13;fontStyle=1;fontColor=#404040;" vertex="1" parent="1">
+          <mxGeometry x="630" y="150" width="400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="mod" value="&lt;b&gt;BilleteraBridgeModule&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;getName() = &quot;BilleteraBridge&quot;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;randomBytes · login · registrar&lt;br&gt;buscarDestino · transferir&lt;br&gt;movimientos · send&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="650" y="185" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nB" value="Entra un sobre cifrado y sale un sobre cifrado. Lo que toca navegacion se publica en el hilo principal." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="650" y="320" width="360" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="emit" value="&lt;b&gt;JsEmitter&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;el camino de vuelta: emitDeviceEvent sobre el contexto vivo del host&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="650" y="390" width="360" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cripto" value="&lt;b&gt;BridgeCrypto&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;la llave del canal: 32 bytes que viven solo en memoria, viajan una vez en las props y se rotan al volver a Login&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="650" y="466" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ev1" value="&lt;b&gt;Suben por send()&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;LOGIN_SUCCESS · HOME_READY&lt;br&gt;OPEN_TRANSFER · OPEN_MOVEMENTS&lt;br&gt;TRANSFER_SUCCESS · LOGOUT&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="650" y="554" width="360" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="ev2" value="&lt;b&gt;Bajan por emitDeviceEvent&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;LOAD_HOME · SESSION_EXPIRED&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="650" y="650" width="360" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="nB2" value="En claro solo viajan el nombre del evento, el codigo de error y randomBytes. Todo lo demas va dentro del sobre." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="650" y="718" width="360" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="zC" value="Bundles de React Native · Hermes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#b3b3b3;dashed=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=13;fontStyle=1;fontColor=#404040;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="150" width="620" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="bLogin" value="&lt;b&gt;LoginBundle.tsx&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;entrar y crear cuenta&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="185" width="290" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="bHome" value="&lt;b&gt;HomeBundle.tsx&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;saludo, saldo y las dos acciones&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1385" y="185" width="275" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="bTrans" value="&lt;b&gt;TransferenciaBundle.tsx&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;dos pasos y confirmacion&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="256" width="290" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="bMov" value="&lt;b&gt;MovimientosBundle.tsx&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;lista agrupada por dia&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1385" y="256" width="275" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="shared" value="&lt;b&gt;src/shared&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;bridge.ts: el cliente del modulo nativo y la tabla de errores&lt;br&gt;crypto.ts: el mismo sobre, del lado de JavaScript&lt;br&gt;theme.ts, formato.ts, validaciones.ts y los componentes propios&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="330" width="580" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="entries" value="&lt;b&gt;entries/*.js&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;un punto de entrada por pantalla. AppRegistry.registerComponent con el nombre que pide Android&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="434" width="580" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="assets" value="&lt;b&gt;assets/bundles/*.android.bundle&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;bytecode de Hermes. Metro arma el JavaScript y hermesc lo compila. El host de cada pantalla lo lee de aqui, no de un servidor&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="510" width="580" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="nC" value="Cada bundle se carga desde los assets del APK, no desde un servidor. Nadie descarga codigo en tiempo de ejecucion." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="586" width="580" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zD" value="Datos y seguridad · Kotlin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#b3b3b3;dashed=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=13;fontStyle=1;fontColor=#404040;" vertex="1" parent="1">
+          <mxGeometry x="40" y="880" width="1640" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sesion" value="&lt;b&gt;SesionManager&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;crea, lee y cierra la sesion. TTL de 2 minutos en depuracion y 10 en publicacion&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="915" width="300" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="&lt;b&gt;SecureStore&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;guarda cifrado en SharedPreferences. Si un valor no abre, lo descarta&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="380" y="915" width="300" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="llave" value="&lt;b&gt;LlaveKeystore&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Android Keystore&lt;br&gt;AES-256-GCM&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="700" y="915" width="260" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="banco" value="&lt;b&gt;BancoMockApi&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;el backend simulado, dentro del proceso. Reglas de negocio y latencia&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="980" y="915" width="300" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;b&gt;MockDb&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;usuarios y movimientos en JSON, guardados cifrados&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="915" width="280" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="nD" value="La clave del usuario nunca se guarda: solo su hash PBKDF2 con 210.000 iteraciones." style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1000" width="620" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="lge0" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1305" y="46" as="sourcePoint" />
+            <mxPoint x="1375" y="46" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lge1" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1305" y="72" as="sourcePoint" />
+            <mxPoint x="1375" y="72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lge2" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1305" y="98" as="sourcePoint" />
+            <mxPoint x="1375" y="98" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;" edge="1" parent="1" source="app" target="splash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="abre una pantalla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;" edge="1" parent="1" source="splash" target="bact">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;" edge="1" parent="1" source="bact" target="bdel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;" edge="1" parent="1" source="bact" target="bhost">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" value="props iniciales: la llave del canal y el nombre del bundle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.97;entryX=0;entryY=0.97;verticalAlign=bottom;" edge="1" parent="1" source="zA" target="zC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" value="llamadas al modulo nativo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;strokeWidth=2;exitX=0;exitY=0.35;entryX=1;entryY=0.75;verticalAlign=bottom;" edge="1" parent="1" source="shared" target="mod">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" value="respuesta cifrada" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#6c8ebf;dashed=1;exitX=1;exitY=0.35;entryX=0;entryY=0.12;verticalAlign=bottom;" edge="1" parent="1" source="mod" target="shared">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" value="eventos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#d79b00;strokeWidth=2;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="emit" target="shared">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" value="abre y cierra el sobre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#d79b00;exitX=0.15;exitY=1;entryX=0.15;entryY=0;" edge="1" parent="1" source="mod" target="cripto">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" value="exige sesion valida" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#b85450;exitX=0.2;exitY=1;entryX=0.5;entryY=0;verticalAlign=bottom;" edge="1" parent="1" source="zB" target="sesion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f11" value="consulta y mueve plata" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#666666;exitX=0.8;exitY=1;entryX=0.35;entryY=0;verticalAlign=bottom;" edge="1" parent="1" source="zB" target="banco">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#b85450;" edge="1" parent="1" source="sesion" target="store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f13" value="cifra con" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#b85450;" edge="1" parent="1" source="store" target="llave">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#666666;" edge="1" parent="1" source="banco" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f15" value="persiste cifrado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#666666;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="db" target="store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f16" value="npm run bundles" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeColor=#666666;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="entries" target="assets">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

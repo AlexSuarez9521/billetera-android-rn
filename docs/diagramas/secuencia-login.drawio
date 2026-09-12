@@ -1,0 +1,339 @@
+<mxfile host="app.diagrams.net" type="device" version="28.0.6">
+  <diagram id="secuencia-login" name="Inicio de sesión: del arranque de la app al saldo en Home">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tit" value="Inicio de sesión: del arranque de la app al saldo en Home" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="14" width="1000" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Splash, diagnóstico del dispositivo, ingreso y primera carga de Home." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="1000" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_usr" value="Usuario" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;verticalAlign=top;spacingTop=48;labelBorderColor=none;size=50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="70" width="20" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_spl" value="SplashActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_log" value="LoginActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_lbu" value="LoginBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_br" value="BilleteraBridgeModule" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ban" value="BancoMockApi" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ses" value="SesionManager&lt;br&gt;(SecureStore)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hac" value="HomeActivity" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_hbu" value="HomeBundle&lt;br&gt;(React Native)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=50;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="70" width="150" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ac0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="530" y="135" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ac1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="205" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="265" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="890" y="365" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ac4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="395" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="455" width="10" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ac6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="525" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="625" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac8" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="755" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="710" y="785" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ac10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="815" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="875" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="935" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="965" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ac14" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="995" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ms1" value="1. abre la app" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="140" as="sourcePoint" />
+            <mxPoint x="530" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms2" value="2. DeviceIntegrity.diagnosticar()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="170" as="sourcePoint" />
+            <mxPoint x="540" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="170" />
+              <mxPoint x="580" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms3" value="3. sesion.esValida()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="210" as="sourcePoint" />
+            <mxPoint x="1430" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms4" value="4. false, no hay sesión guardada" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="240" as="sourcePoint" />
+            <mxPoint x="540" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms5" value="5. Navegacion.aLogin(this)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="270" as="sourcePoint" />
+            <mxPoint x="710" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms6" value="6. carga login.android.bundle con las props iniciales" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="300" as="sourcePoint" />
+            <mxPoint x="895" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms7" value="7. init(props): setClaveCanal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="895" y="330" as="sourcePoint" />
+            <mxPoint x="895" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="935" y="330" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms8" value="8. celular, clave y Ingresar" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="370" as="sourcePoint" />
+            <mxPoint x="890" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms9" value="9. randomBytes(12)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="400" as="sourcePoint" />
+            <mxPoint x="1070" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms10" value="10. iv aleatorio en base64" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="430" as="sourcePoint" />
+            <mxPoint x="900" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms11" value="11. login(envelope) cifrado AES-256-GCM" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="460" as="sourcePoint" />
+            <mxPoint x="1070" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms12" value="12. BridgeCrypto.descifrar()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="490" as="sourcePoint" />
+            <mxPoint x="1080" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1120" y="490" />
+              <mxPoint x="1120" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms13" value="13. autenticar(celular, clave)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="530" as="sourcePoint" />
+            <mxPoint x="1250" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms14" value="14. PasswordHasher.verificar()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="560" as="sourcePoint" />
+            <mxPoint x="1260" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="560" />
+              <mxPoint x="1300" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms15" value="15. Resultado.Ok(Usuario)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="600" as="sourcePoint" />
+            <mxPoint x="1080" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms16" value="16. crear(usuario)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="630" as="sourcePoint" />
+            <mxPoint x="1430" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms17" value="17. store.put(&quot;sesion&quot;)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="660" as="sourcePoint" />
+            <mxPoint x="1440" y="680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1480" y="660" />
+              <mxPoint x="1480" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms18" value="18. Sesion(sessionId, expiraEnMs)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="700" as="sourcePoint" />
+            <mxPoint x="1080" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms19" value="19. sobre con sessionId y expiraEn" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="730" as="sourcePoint" />
+            <mxPoint x="900" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms20" value="20. send(&quot;LOGIN_SUCCESS&quot;, {sessionId})" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="760" as="sourcePoint" />
+            <mxPoint x="1070" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms21" value="21. onBundleEvent(LOGIN_SUCCESS)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="790" as="sourcePoint" />
+            <mxPoint x="720" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms22" value="22. actual()" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="820" as="sourcePoint" />
+            <mxPoint x="1430" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms23" value="23. sessionId vigente" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="850" as="sourcePoint" />
+            <mxPoint x="720" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms24" value="24. Navegacion.aHome(this)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="880" as="sourcePoint" />
+            <mxPoint x="1610" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms25" value="25. carga home.android.bundle con las props iniciales" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="910" as="sourcePoint" />
+            <mxPoint x="1795" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms26" value="26. send(&quot;HOME_READY&quot;)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1795" y="940" as="sourcePoint" />
+            <mxPoint x="1080" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms27" value="27. onBundleEvent(HOME_READY)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="970" as="sourcePoint" />
+            <mxPoint x="1610" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms28" value="28. usuario(s.userId)" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="1000" as="sourcePoint" />
+            <mxPoint x="1260" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms29" value="29. saldo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;dashed=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1030" as="sourcePoint" />
+            <mxPoint x="1610" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms30" value="30. LOAD_HOME cifrado: nombre, celular, saldo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="1060" as="sourcePoint" />
+            <mxPoint x="1795" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ms31" value="31. muestra el saldo" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;verticalAlign=bottom;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1795" y="1090" as="sourcePoint" />
+            <mxPoint x="355" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt0" value="El diagnóstico lee rutas su, TAGS y getprop fuera del hilo de UI y la pantalla espera 1200 ms. Bloquea solo si hay señales de root, no es emulador y no es depuración." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="175" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl0" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="225" as="sourcePoint" />
+            <mxPoint x="535" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt1" value="claveCanal viaja en claro en las props iniciales, que son la excepción; vive solo en memoria y se rota al volver a Login." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="375" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl1" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="415" as="sourcePoint" />
+            <mxPoint x="895" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt2" value="PBKDF2 con 210.000 iteraciones. El estado de la cuenta se revisa después de verificar la clave, no antes." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="580" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl2" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="615" as="sourcePoint" />
+            <mxPoint x="1255" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt3" value="SecureStore cifra con AES-256-GCM y la llave del Android Keystore." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="685" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl3" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1910" y="715" as="sourcePoint" />
+            <mxPoint x="1435" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nt4" value="Red de seguridad del bundle: si LOGIN_SUCCESS no termina en navegación, a los 5 s apaga el botón y muestra el error." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=14;verticalAlign=top;align=left;spacingLeft=6;spacingTop=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="735" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ntl4" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="775" as="sourcePoint" />
+            <mxPoint x="895" y="775" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+
+--- 8. RESULTADO DE LA TRANSFERENCIA ---
+actividad: com.asuarez.billetera/.bundles.TransferenciaActivity
+pantalla : ✓ | Listo | $ 150.000 | para Laura P. | 12 sep 2026, 01:35 | Nuevo saldo | $ 1.100.000 | Volver al inicio
+
+--- 9. HOME CON SALDO ACTUALIZADO ---
+actividad: com.asuarez.billetera/.bundles.HomeActivity
+pantalla : Hola, Alex | 3001234567 | Disponible | $ 1.100.000 | Transferir, › | Transferir | › | Movimientos, › | Movimientos | Cerrar sesión

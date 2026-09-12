@@ -1,0 +1,67 @@
+=== R8: mapping.txt ===
+total 11932
+drwxr-xr-x 1 ASUAREZ+alexs 197609       0 Sep 11 20:32 .
+drwxr-xr-x 1 ASUAREZ+alexs 197609       0 Sep 11 20:31 ..
+-rw-r--r-- 1 ASUAREZ+alexs 197609   27510 Sep 11 20:32 configuration.txt
+-rw-r--r-- 1 ASUAREZ+alexs 197609 9698469 Sep 11 20:32 mapping.txt
+-rw-r--r-- 1 ASUAREZ+alexs 197609  388617 Sep 11 20:32 resources.txt
+-rw-r--r-- 1 ASUAREZ+alexs 197609  690611 Sep 11 20:32 seeds.txt
+-rw-r--r-- 1 ASUAREZ+alexs 197609 1406142 Sep 11 20:32 usage.txt
+
+=== lineas del mapping: 113995 ===
+
+=== clases propias renombradas (com.asuarez.billetera -> nombre corto) ===
+com.asuarez.billetera.BilleteraApp -> com.asuarez.billetera.BilleteraApp:
+com.asuarez.billetera.BilleteraApp$Companion -> com.asuarez.billetera.BilleteraApp$a:
+com.asuarez.billetera.BilleteraApp$onCreate$store$1 -> com.asuarez.billetera.BilleteraApp$b:
+com.asuarez.billetera.R$id -> M.a:
+com.asuarez.billetera.R$layout -> M.b:
+com.asuarez.billetera.R$string -> M.c:
+com.asuarez.billetera.bridge.BilleteraBridgeModule -> com.asuarez.billetera.bridge.BilleteraBridgeModule:
+com.asuarez.billetera.bridge.BilleteraBridgeModule$$ExternalSyntheticLambda0 -> N.a:
+com.asuarez.billetera.bridge.BilleteraBridgeModule$$ExternalSyntheticLambda1 -> N.b:
+com.asuarez.billetera.bridge.BilleteraBridgePackage -> N.c:
+com.asuarez.billetera.bridge.JsEmitter -> N.d:
+com.asuarez.billetera.bundles.BundleActivity -> O.g:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda0 -> O.a:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda1 -> O.b:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda2 -> O.c:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda3 -> O.d:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda4 -> O.e:
+com.asuarez.billetera.bundles.BundleActivity$$ExternalSyntheticLambda5 -> O.f:
+com.asuarez.billetera.bundles.BundleDelegate -> O.h:
+com.asuarez.billetera.bundles.BundleHost -> O.j:
+com.asuarez.billetera.bundles.BundleHost$$ExternalSyntheticLambda0 -> O.i:
+com.asuarez.billetera.bundles.FabricaDeSoporte -> O.k:
+com.asuarez.billetera.bundles.HomeActivity -> com.asuarez.billetera.bundles.HomeActivity:
+com.asuarez.billetera.bundles.HomeActivity$$ExternalSyntheticLambda0 -> O.l:
+com.asuarez.billetera.bundles.HomeActivity$$ExternalSyntheticLambda1 -> O.m:
+com.asuarez.billetera.bundles.HomeActivity$$ExternalSyntheticLambda2 -> O.n:
+com.asuarez.billetera.bundles.LoginActivity -> com.asuarez.billetera.bundles.LoginActivity:
+com.asuarez.billetera.bundles.MovimientosActivity -> com.asuarez.billetera.bundles.MovimientosActivity:
+com.asuarez.billetera.bundles.RnBundle -> O.o:
+com.asuarez.billetera.bundles.SoporteSinRedbox -> O.p:
+com.asuarez.billetera.bundles.TransferenciaActivity -> com.asuarez.billetera.bundles.TransferenciaActivity:
+com.asuarez.billetera.data.Apunte -> P.a:
+com.asuarez.billetera.data.BancoMockApi -> P.b:
+com.asuarez.billetera.data.BancoMockApi$1 -> P.b$a:
+com.asuarez.billetera.data.BancoMockApi$movimientos$$inlined$sortedByDescending$1 -> P.b$b:
+com.asuarez.billetera.data.DatosSemilla -> P.c:
+com.asuarez.billetera.data.Estado -> P.d:
+com.asuarez.billetera.data.EstadoMov -> P.e:
+com.asuarez.billetera.data.MockDb -> P.f:
+com.asuarez.billetera.data.Movimiento -> P.g:
+
+=== conteo de clases propias en el mapping ===
+70
+=== cuantas quedaron con nombre distinto al original (renombradas) ===
+62
+=== cuantas conservan el nombre ===
+com.asuarez.billetera.BilleteraApp
+com.asuarez.billetera.bridge.BilleteraBridgeModule
+com.asuarez.billetera.bundles.HomeActivity
+com.asuarez.billetera.bundles.LoginActivity
+com.asuarez.billetera.bundles.MovimientosActivity
+com.asuarez.billetera.bundles.TransferenciaActivity
+com.asuarez.billetera.error.ErrorActivity
+com.asuarez.billetera.splash.SplashActivity

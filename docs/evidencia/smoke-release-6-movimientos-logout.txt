@@ -1,0 +1,13 @@
+=== SMOKE APK RELEASE — movimientos y logout ===
+
+--- 11. VUELTA A HOME ---
+actividad: com.asuarez.billetera/.bundles.HomeActivity
+pantalla : Hola, Alex | 3001234567 | Disponible | $ 1.100.000 | Transferir, › | Transferir | › | Movimientos, › | Movimientos | Cerrar sesión
+
+--- 12. MOVIMIENTOS ---
+actividad: com.asuarez.billetera/.bundles.MovimientosActivity
+pantalla : Movimientos | Hoy | Transferencia rechazada: saldo insuficiente | -$ 9.000.000 | 01:36 · Débito | Rechazada | Transferencia a Laura P. | -$ 150.000 | 01:35 · Débito | Exitosa | 8 de septiembre | Pago servicios públicos | -$ 250.000 | 17:40 · Débito | 5 de septiembre | Abono de nómina | +$ 1.500.000 | 08:12 · Crédito
+
+--- 13. LOGOUT -> LOGIN ---
+actividad: com.asuarez.billetera/.bundles.LoginActivity
+pantalla : Billetera | Ingresa tu celular y tu clave | Celular | Clave | Ingresar | Crear cuenta

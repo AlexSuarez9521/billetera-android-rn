@@ -1,0 +1,4 @@
+=== CAPTURAS (APK debug; FLAG_SECURE es solo de release) ===
+splash.png  bytes=110007  | Revisa tu dispositivo | Encontramos estas señales:&#10;&#10;HARDWARE=ranchu&#10;PRODUCT=sdk_gphone64_x86_64&#10;DEVICE=e
+login.png   bytes=58006  | Billetera | Ingresa tu celular y tu clave | Celular | Clave | Ingresar | Crear cuenta
+login-error.png bytes=72478 | Billetera | Celular o clave incorrectos | Ingresa tu celular y tu clave | Celular | 3001234567 | Clave | ••••••••• | Ingresar | Crear cuenta

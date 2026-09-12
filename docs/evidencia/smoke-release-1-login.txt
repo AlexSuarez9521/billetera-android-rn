@@ -1,0 +1,13 @@
+=== SMOKE APK RELEASE (ofuscado con R8) — emulator-5554 ===
+
+--- 1. SPLASH: aviso de emulador ---
+actividad: com.asuarez.billetera/.splash.SplashActivity
+pantalla : Revisa tu dispositivo | Encontramos estas señales:&#10;&#10;HARDWARE=ranchu&#10;PRODUCT=sdk_gphone64_x86_64&#10;DEVICE=emu64xa&#10;FINGERPRINT de emulador&#10;BOARD=goldfish_x86_64&#10;BOOTLOADER=unknown&#10;qemu=1 | CONTINUAR
+
+--- 2. LOGIN ---
+actividad: com.asuarez.billetera/.bundles.LoginActivity
+pantalla : Billetera | Ingresa tu celular y tu clave | Celular | Clave | Ingresar | Crear cuenta
+
+--- 3. LOGIN CON CLAVE MALA ---
+actividad: com.asuarez.billetera/.bundles.LoginActivity
+pantalla : Billetera | Celular o clave incorrectos | Ingresa tu celular y tu clave | Celular | 3001234567 | Clave | ••••••••• | Ingresar | Crear cuenta

@@ -1,0 +1,2 @@
+splash-wordmark.png bytes=51389
+foco: com.asuarez.billetera/.splash.SplashActivity

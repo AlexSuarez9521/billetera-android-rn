@@ -1,0 +1,18 @@
+=== firma del APK release ===
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Billetera
+Signer #1 certificate SHA-256 digest: 35d350d56d0b1f47c89aec03f2117c48eba5661a0e5aad8c3aa1f3fd904979d0
+Signer #1 certificate SHA-1 digest: e848d3b1c660152d65e7a7300f7da4b942042af3
+Signer #1 certificate MD5 digest: a5cf3387a3f5a5cfa5ab34b4ac56b98c
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: c6fa811df9601c1256540393f69ca0656a324cdd5a74401550329465bd2f274f
+Signer #1 public key SHA-1 digest: 6973b3438b9eae522ddc5cfb67dd602cc09bf15e
+Signer #1 public key MD5 digest: 961716496d53276fc5c5eee6a24fabdf

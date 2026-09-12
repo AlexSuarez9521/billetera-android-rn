@@ -1,0 +1,1 @@
+movimientos.png bytes=138558 | Movimientos | Hoy | Transferencia rechazada: saldo insuficiente | -$ 9.000.000 | 01:41 · Débito | Rechazada | Transferencia a Laura P. - Almuerzo | -$ 150.000 | 01:40 · Débito | Exitosa | 8 de septiembre | Pago servicios públicos | -$ 250.000 | 17:40 · Débito | 5 de septiembre | Abono de nómina | +$ 1.500.000 | 08:12 · Crédito

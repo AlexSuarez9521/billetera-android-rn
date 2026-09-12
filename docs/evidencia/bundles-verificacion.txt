@@ -1,0 +1,14 @@
+=== bundles en assets ===
+total 6384
+drwxr-xr-x 1 ASUAREZ+alexs 197609       0 Sep 11 20:27 .
+drwxr-xr-x 1 ASUAREZ+alexs 197609       0 Sep 11 19:25 ..
+-rw-r--r-- 1 ASUAREZ+alexs 197609 1627347 Sep 11 20:26 home.android.bundle
+-rw-r--r-- 1 ASUAREZ+alexs 197609 1631012 Sep 11 20:26 login.android.bundle
+-rw-r--r-- 1 ASUAREZ+alexs 197609 1626703 Sep 11 20:27 movimientos.android.bundle
+-rw-r--r-- 1 ASUAREZ+alexs 197609 1639751 Sep 11 20:26 transferencia.android.bundle
+
+=== cabecera Hermes (8 bytes magicos c6 1f bc 03 c1 03 19 1f) ===
+home.android.bundle               c6 1f bc 03 c1 03 19 1f 60 00 00 00 c6 57 a5 64
+login.android.bundle              c6 1f bc 03 c1 03 19 1f 60 00 00 00 f3 12 f4 38
+movimientos.android.bundle        c6 1f bc 03 c1 03 19 1f 60 00 00 00 52 45 b9 a9
+transferencia.android.bundle      c6 1f bc 03 c1 03 19 1f 60 00 00 00 ac bd f1 9d

@@ -1,0 +1,6 @@
+=== npm run lint ===
+
+> billetera@0.0.1 lint
+> eslint .
+
+EXIT=0

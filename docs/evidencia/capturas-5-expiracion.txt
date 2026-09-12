@@ -1,0 +1,9 @@
+sesion nueva en Home a las 20:43:00 (TTL debug = 2 min)
+arranca la rafaga de capturas
+  frame 006  foco=com.asuarez.billetera/.bundles.HomeActivity
+  frame 012  foco=com.asuarez.billetera/.bundles.HomeActivity
+  frame 018  foco=com.asuarez.billetera/.bundles.HomeActivity
+  frame 024  foco=com.asuarez.billetera/.bundles.HomeActivity
+  frame 030  foco=com.asuarez.billetera/.bundles.LoginActivity
+ya navego a Login en el frame 030
+frames capturados: 30

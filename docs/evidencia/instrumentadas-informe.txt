@@ -1,0 +1,4 @@
+
+=== INSTRUMENTADAS (2a corrida, misma pasada final) ===
+<testsuite name="com.asuarez.billetera.HomeActivityCargaBundleTest" tests="13" failures="0" errors="0" skipped="0" time="23.434" timestamp="2026-09-12T01:47:54" hostname="localhost">
+testcases=13

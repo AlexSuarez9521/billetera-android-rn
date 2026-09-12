@@ -1,0 +1,32 @@
+=== PASADA FINAL — Fri Sep 11 20:46:33 HPS 2026 ===
+
+--- npx tsc --noEmit ---
+tsc exit=0
+
+--- npm run lint ---
+
+> billetera@0.0.1 lint
+> eslint .
+
+lint exit=0
+
+--- npm test ---
+
+> billetera@0.0.1 test
+> jest
+
+PASS __tests__/formato.test.ts
+PASS __tests__/validaciones.test.ts
+PASS __tests__/agruparPorDia.test.ts
+PASS __tests__/crypto.test.ts
+PASS __tests__/useTransferencia.test.ts
+PASS __tests__/MovimientosBundle.test.tsx
+PASS __tests__/LoginBundle.test.tsx
+PASS __tests__/HomeBundle.test.tsx
+
+Test Suites: 8 passed, 8 total
+Tests:       43 passed, 43 total
+Snapshots:   0 total
+Time:        3.87 s
+Ran all test suites.
+jest exit=0

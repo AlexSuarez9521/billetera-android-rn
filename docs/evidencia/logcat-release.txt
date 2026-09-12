@@ -1,0 +1,21 @@
+=== logcat del smoke release: tag Billetera + errores del proceso ===
+--------- beginning of main
+09-12 01:33:07.313  8280  8331 I ReactNativeJS: Running "LoginBundle"
+09-12 01:33:07.394  8280  8331 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:33:57.170  8400  8491 I ReactNativeJS: Running "LoginBundle"
+09-12 01:33:57.305  8400  8491 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:34:41.476  8400  8748 I ReactNativeJS: Running "HomeBundle"
+09-12 01:34:41.523  8400  8748 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:34:53.622  8400  8810 I ReactNativeJS: Running "TransferenciaBundle"
+09-12 01:34:53.730  8400  8810 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:35:31.540  8400  8400 I Billetera: Transferencia registrada: m00004
+09-12 01:36:02.947  8400  9238 I ReactNativeJS: Running "TransferenciaBundle"
+09-12 01:36:03.049  8400  9238 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:36:52.812  8400  9525 I ReactNativeJS: Running "MovimientosBundle"
+09-12 01:36:52.847  8400  9525 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+09-12 01:37:06.949  8400  9609 I ReactNativeJS: Running "LoginBundle"
+09-12 01:37:07.085  8400  9609 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+
+=== ningun crash del paquete ===
+09-12 01:33:43.595   714  1655 W ActivityTaskManager: Force removing ActivityRecord{30884203 u0 com.asuarez.billetera/.bundles.LoginActivity t62 f}}: app died, no saved state
+(vacio = sin crashes)

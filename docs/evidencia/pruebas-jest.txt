@@ -1,0 +1,20 @@
+=== npm test ===
+
+> billetera@0.0.1 test
+> jest
+
+PASS __tests__/formato.test.ts
+PASS __tests__/validaciones.test.ts
+PASS __tests__/crypto.test.ts
+PASS __tests__/agruparPorDia.test.ts
+PASS __tests__/useTransferencia.test.ts
+PASS __tests__/MovimientosBundle.test.tsx
+PASS __tests__/LoginBundle.test.tsx
+PASS __tests__/HomeBundle.test.tsx
+
+Test Suites: 8 passed, 8 total
+Tests:       43 passed, 43 total
+Snapshots:   0 total
+Time:        3.969 s
+Ran all test suites.
+EXIT=0

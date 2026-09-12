@@ -1,0 +1,5 @@
+=== SMOKE APK RELEASE — login correcto y home ===
+
+--- 4. HOME ---
+actividad: com.asuarez.billetera/.bundles.HomeActivity
+pantalla : Hola, Alex | 3001234567 | Disponible | $ 1.250.000 | Transferir, › | Transferir | › | Movimientos, › | Movimientos | Cerrar sesión

@@ -1,0 +1,26 @@
+.DS_Store
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+.kotlin/
+
+# node.js
+node_modules/
+npm-debug.log
+.metro-health-check*
+/coverage
+
+# bundle intermedio de metro; el bytecode de hermes sí se commitea
+*.jsbundle
+
+# firma de release
+keystore.properties
+*.jks
